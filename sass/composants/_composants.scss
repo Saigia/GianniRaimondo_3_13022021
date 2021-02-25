@@ -105,16 +105,29 @@ h2 {
 .fonctionnement div:hover {
     background-color: $color-bg3;
     box-shadow: 2px 4px 4px $color-shafonc;
-    &i {
+    &i{
         color: $color-01;
     }
 }
+
 .restaurants {
     background-color: $color-bg1;
 }
 
+.restaurants aside {
+    padding-bottom: 40px;
+}
 .restaurants h2 {
     padding-top: 40px;
+    margin-bottom: -11px
+}
+
+.restotexte1 {
+    margin-bottom: -35px;
+}
+
+.restotexte2 {
+    margin-bottom: -10px
 }
 
 .restaurants a {
@@ -125,7 +138,7 @@ h2 {
     @include image;
 }
 
-.imgresto2 {
+.imgresto2 {/*image 2*/
     width: 90%;
     height: 150px;
     object-position: 0px -127px;
@@ -133,3 +146,57 @@ h2 {
     border-radius: 15px 15px 0 0;
 }
 
+.restaurants h3 {
+    font-size: $nomresto-size;
+    margin-top: 8px;
+    margin-left: 25px;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.restaurants p {
+    font-size: $lieuresto-size;
+    margin-top: 2px;
+    margin-left: 25px;
+    text-align: left;
+}
+
+.coeur {
+    font-size: 20px;
+    position: relative;
+    right: -115px;
+    top: -50px;
+}
+
+.nouveau {
+    @include nouveau;
+    position: relative;
+    right: -70%;
+    top: 40px;
+}
+
+footer {
+    background-color: $color-bg2;
+    text-align: left;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    padding-left: 5%;
+}
+
+.footer-logo {
+    height: 20px;
+    width: 35%;
+}
+
+footer a {
+    color: $color-blc;
+}
+
+.couverts {
+    padding-right: 6px;
+}
+
+.poignee-mains {
+    font-size: 11px;
+    padding-right: 5px;
+}

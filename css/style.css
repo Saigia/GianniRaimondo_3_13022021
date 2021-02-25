@@ -1,9 +1,204 @@
+@charset "UTF-8";
+/*shadow bouton Header + bg n° Fonctionnement (+survol icone)*/
+/*bg bouton Header*/
+/*bg bouton resto "nouveau" + lignes resto + anim resto*/
+/*txt bouton resto "nouveau"*/
+/*ombre logo*/
+/*bg Header, boutons Fonctionnement, bg Resto*/
+/*icone + police input, bg Footer, fleche-lien resto retour accueil*/
+/*bg survol boutons Fonctionnement*/
+/*icones Fonctionnement*/
+/*ombre boutons Fonctionnement*/
+/*h2 fonctionnement + resto*/
+/* utils:position 1*/
 /* utils:position 1*/
 body {
-  background-color: #99e2d0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "roboto", sans-serif;
+}
+
+a {
+  /*accueil Restos + footer*/
+  text-decoration: none;
+  color: black;
 }
 
 /* base:position 3*/
+/*page1 - Accueil*/
+.entete {
+  padding: 5px 0;
+  background-color: #f6f6f6;
+}
+
+.header-logo {
+  background-color: #f6f6f6;
+  height: 30px;
+  width: 50%;
+}
+
+input {
+  background-color: #eaeaea;
+  border: none;
+  color: #353535;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  height: 40px;
+  box-shadow: 0 2px 4px #d5d5d5 inset;
+}
+
+.mapmaker {
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  font-size: 15px;
+  color: #353535;
+}
+
+#champ::placeholder {
+  /*fonctionne que sur chrome ????*/
+  color: #353535;
+}
+
+h1 {
+  font-size: 20px;
+  padding: 15px 40px 0 40px;
+  margin-bottom: 0;
+}
+
+.header-titres {
+  background-color: #f6f6f6;
+  padding: 1px 0 45px 0;
+}
+
+header p {
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.bouton {
+  background-color: #ff79da;
+  color: #fff;
+  box-shadow: -10px -27px 35px #9356dc inset;
+  border: none;
+  height: 50px;
+  border-radius: 25px;
+  padding: 0 20px;
+}
+
+h2 {
+  font-size: 20px;
+  text-align: left;
+  padding: 15px 0 0 15px;
+}
+
+.fonctionnement {
+  margin-bottom: 55px;
+}
+
+.fonctionnement div {
+  width: 87%;
+  height: 45px;
+  margin-left: 8%;
+  margin-bottom: 20px;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  box-shadow: 2px 4px 8px #e9e9e9;
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+.numberfonc1, .numberfonc2, .numberfonc3 {
+  padding: 2px 7px;
+  border-radius: 15px;
+  background-color: #9356dc;
+  color: #fff;
+}
+
+.numberfonc1, .numberfonc3 {
+  position: relative;
+  left: -51px;
+}
+
+.numberfonc2 {
+  position: relative;
+  left: -47px;
+}
+
+.iconefonc1, .iconefonc2, .iconefonc3 {
+  color: #7e7e7e;
+  font-size: 17px;
+}
+
+.iconefonc1, .iconefonc3 {
+  position: relative;
+  left: -37px;
+}
+
+.iconefonc2 {
+  position: relative;
+  left: -33px;
+}
+
+.txtfonc1 {
+  margin-left: -15px;
+  margin-right: 15px;
+}
+
+.txtfonc2 {
+  margin-left: -17px;
+  margin-right: 32px;
+}
+
+.txtfonc3 {
+  margin-left: -24px;
+  margin-right: 24px;
+}
+
+/*le changement de couleur de l'icone au survol de la div ne marche pas*/
+.fonctionnement div:hover {
+  background-color: #f5edff;
+  box-shadow: 2px 4px 4px #e9e9e9;
+}
+.fonctionnement div:hoveri {
+  color: #9356dc;
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+}
+
+.restaurants h2 {
+  padding-top: 40px;
+}
+
+.restaurants a {
+  background-color: #fff;
+  padding-bottom: 50px;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 5px 10px #e9e9e9;
+}
+
+.imgresto1 {
+  /*images 1, 3 et 4*/
+  width: 90%;
+  height: 150px;
+  object-fit: cover;
+  object-position: bottom;
+  border-radius: 15px 15px 0 0;
+}
+
+.imgresto2 {
+  width: 90%;
+  height: 150px;
+  object-position: 0px -127px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+/* composants:position 4*/
 /* layout:position 5*/
 
 /*# sourceMappingURL=style.css.map */

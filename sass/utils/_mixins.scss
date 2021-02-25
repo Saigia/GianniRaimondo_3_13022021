@@ -1,0 +1,65 @@
+@mixin input {
+    background-color: $color-input;
+    border: none;
+    color: $color-bg2;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    height: 40px;
+    box-shadow: 0 2px 4px $color-shalogo inset; 
+}
+
+@mixin bouton {
+    background-color: $color-02;
+    color: $color-blc;
+    box-shadow: -10px -27px 35px $color-01 inset;
+    border: none;
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 20px;
+}
+
+@mixin parafonc {
+    width: 87%;
+    height: 45px;
+    margin-left: 8%;
+    margin-bottom: 20px;
+    background-color: $color-bg1;
+    border-radius: 20px;
+    box-shadow: 2px 4px 8px $color-shafonc;
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+@mixin numberfonc {
+    padding: 2px 7px;
+    border-radius: 15px;
+    background-color: $color-01;
+    color: $color-blc;
+}
+
+@mixin iconefonc {
+    color: $color-icone;
+    font-size: 17px;
+}
+
+@mixin image {
+    width: 90%;
+    height: 150px;
+    object-fit: cover;
+    object-position: bottom;
+    border-radius: 15px 15px 0 0;
+    
+}
+
+@mixin lien {
+    text-decoration: none;
+    color: black;
+}
+
+@mixin lien-resto {
+    background-color: $color-blc;
+    padding-bottom: 50px;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 5px 10px $color-shafonc;
+}

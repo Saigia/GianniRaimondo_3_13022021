@@ -1,5 +1,8 @@
 @import "./utils/variables"; /* utils:position 1*/
+@import "./utils/mixins"; /* utils:position 1*/
 
-@import "./base/index"; /* base:position 3*/
+@import "./base/base"; /* base:position 3*/
+
+@import "./composants/composants"; /* composants:position 4*/
 
 @import "./layout/form"; /* layout:position 5*/

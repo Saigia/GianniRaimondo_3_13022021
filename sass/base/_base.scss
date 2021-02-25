@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'roboto', sans-serif;
+}
+
+a {/*accueil Restos + footer*/
+    @include lien;
+}

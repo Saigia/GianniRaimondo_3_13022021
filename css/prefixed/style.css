@@ -1,0 +1,28 @@
+@charset "UTF-8";
+/* utils:position 1*/
+/* utils:position 1*/
+body {
+  background-color: #99e2d0;
+  /*à modifier*/
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "rotolo", sans-serif;
+}
+
+/* base:position 3*/
+.bouton {
+  background-color: #ff79da;
+  color: #fff;
+  -webkit-box-shadow: -10px -27px 35px #9356dc inset;
+          box-shadow: -10px -27px 35px #9356dc inset;
+  border: none;
+  height: 50px;
+  border-radius: 25px;
+  padding: 0 20px;
+}
+
+/* composants:position 4*/
+/* layout:position 5*/
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3N0eWxlLmNzcyIsIi4uLy4uL3Nhc3Mvc3R5bGUuc2NzcyIsIi4uLy4uL3Nhc3MvYmFzZS9faW5kZXguc2NzcyIsIi4uLy4uL3Nhc3MvdXRpbHMvX3ZhcmlhYmxlcy5zY3NzIiwiLi4vLi4vc2Fzcy9jb21wb3NhbnRzL19jb21wb3NhbnRzLnNjc3MiLCIuLi8uLi9zYXNzL3V0aWxzL19taXhpbnMuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxnQkFBZ0I7QUNBYSxvQkFBQTtBQUNILG9CQUFBO0FDRDFCO0VBQ0kseUJDQ087RUREc0IsYUFBQTtFQUM3QixTQUFBO0VBQ0EsVUFBQTtFQUNBLGtCQUFBO0VBQ0EsaUNBQUE7QUZLSjs7QUNQd0IsbUJBQUE7QUdIeEI7RUNDSSx5QkFBQTtFQUNBLFdGQ1E7RUVBUixrREFBQTtVQUFBLDBDQUFBO0VBQ0EsWUFBQTtFQUNBLFlBQUE7RUFDQSxtQkFBQTtFQUNBLGVBQUE7QUxjSjs7QUNoQm1DLHlCQUFBO0FBRVYscUJBQUEiLCJmaWxlIjoic3R5bGUuY3NzIn0= */

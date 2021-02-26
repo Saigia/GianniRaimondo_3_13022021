@@ -101,11 +101,10 @@ h2 {
     margin-left: -24px;
     margin-right: 24px;
 }
-/*le changement de couleur de l'icone au survol de la div ne marche pas*/
 .fonctionnement div:hover {
     background-color: $color-bg3;
     box-shadow: 2px 4px 4px $color-shafonc;
-    &i{
+    & i{
         color: $color-01;
     }
 }
@@ -122,7 +121,11 @@ h2 {
     margin-bottom: -11px
 }
 
-.restotexte {
+.restotexte1 {
+    margin-top: -25px;
+    margin-bottom: -40px;
+}
+.restotexte2 {
     margin-bottom: -40px;
 }
 
@@ -159,8 +162,8 @@ h2 {
 .nouveau {
     @include nouveau;
     position: relative;
-    right: -70%;
-    top: 40px;
+    right: -76%;
+    top: -150px;
 }
 
 footer {
@@ -172,8 +175,10 @@ footer {
 }
 
 .footer-logo {
-    height: 20px;
+    font-family: 'Shrikhand', sans-serif;
+    height: 25px;
     width: 35%;
+    padding-top: 15px;
 }
 
 footer a {

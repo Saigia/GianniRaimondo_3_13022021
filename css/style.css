@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*page - accueil*/
 /*shadow bouton Header + bg n° Fonctionnement (+survol icone)*/
 /*bg bouton Header*/
 /*bg bouton resto "nouveau" + lignes resto + anim resto*/
@@ -12,7 +13,34 @@
 /*h2 fonctionnement + resto*/
 /*h3 resto*/
 /*p resto*/
+/*page - resto*/
+/*nom resto*/
+/*titres repas*/
+/*accompagnement*/
 /* utils:position 1*/
+/*@mixin parafonc {
+    width: 87%;
+    height: 45px;
+    margin-left: 8%;
+    margin-bottom: 20px;
+    background-color: $color-bg1;
+    border-radius: 20px;
+    box-shadow: 2px 4px 8px $color-shafonc;
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+@mixin numberfonc {
+    padding: 2px 7px;
+    border-radius: 15px;
+    background-color: $color-01;
+    color: $color-blc;
+}
+
+@mixin iconefonc {
+    color: $color-icone;
+    font-size: 17px;
+}*/
 /* utils:position 1*/
 body {
   margin: 0;
@@ -27,7 +55,8 @@ a {
 }
 
 /* base:position 3*/
-/*page1 - Accueil*/
+/*page - Accueil*/
+/*HEADER*/
 .entete {
   padding: 5px 0;
   background-color: #f6f6f6;
@@ -39,6 +68,7 @@ a {
   width: 50%;
 }
 
+/*FORM*/
 input {
   background-color: #eaeaea;
   border: none;
@@ -69,12 +99,12 @@ h1 {
   margin-bottom: 0;
 }
 
-.header-titres {
+.form-titres {
   background-color: #f6f6f6;
   padding: 1px 0 45px 0;
 }
 
-header p {
+form p {
   padding-bottom: 10px;
   margin-top: 10px;
 }
@@ -87,8 +117,10 @@ header p {
   height: 50px;
   border-radius: 25px;
   padding: 0 20px;
+  font-weight: bold;
 }
 
+/*FONCTIONNEMENT*/
 h2 {
   font-size: 20px;
   text-align: left;
@@ -99,73 +131,62 @@ h2 {
   margin-bottom: 55px;
 }
 
+/*
 .fonctionnement div {
-  width: 87%;
-  height: 45px;
-  margin-left: 8%;
-  margin-bottom: 20px;
-  background-color: #f6f6f6;
-  border-radius: 20px;
-  box-shadow: 2px 4px 8px #e9e9e9;
-  padding-top: 20px;
-  font-size: 14px;
+    @include parafonc;
 }
 
 .numberfonc1, .numberfonc2, .numberfonc3 {
-  padding: 2px 7px;
-  border-radius: 15px;
-  background-color: #9356dc;
-  color: #fff;
+    @include numberfonc;
 }
 
 .numberfonc1, .numberfonc3 {
-  position: relative;
-  left: -51px;
+    position: relative;
+    left: -51px;
 }
 
 .numberfonc2 {
-  position: relative;
-  left: -47px;
+    position: relative;
+    left: -47px;
 }
 
 .iconefonc1, .iconefonc2, .iconefonc3 {
-  color: #7e7e7e;
-  font-size: 17px;
+    @include iconefonc;
 }
 
 .iconefonc1, .iconefonc3 {
-  position: relative;
-  left: -37px;
+    position: relative;
+    left: -37px;
 }
 
 .iconefonc2 {
-  position: relative;
-  left: -33px;
+    position: relative;
+    left: -33px;
 }
 
 .txtfonc1 {
-  margin-left: -15px;
-  margin-right: 15px;
+    margin-left: -15px;
+    margin-right: 15px;
 }
 
 .txtfonc2 {
-  margin-left: -17px;
-  margin-right: 32px;
+    margin-left: -17px;
+    margin-right: 32px;
 }
 
 .txtfonc3 {
-  margin-left: -24px;
-  margin-right: 24px;
-}
-
-.fonctionnement div:hover {
+    margin-left: -24px;
+    margin-right: 24px;
+}*/
+.fonctionnement li:hover {
   background-color: #f5edff;
   box-shadow: 2px 4px 4px #e9e9e9;
 }
-.fonctionnement div:hover i {
+.fonctionnement li:hover i {
   color: #9356dc;
 }
 
+/*RESTAURANTS*/
 .restaurants {
   background-color: #f6f6f6;
 }
@@ -236,11 +257,13 @@ h2 {
   color: #008766;
   font-size: 12px;
   padding-top: 5px;
+  font-weight: bold;
   position: relative;
   right: -76%;
   top: -150px;
 }
 
+/*FOOTER*/
 footer {
   background-color: #353535;
   text-align: left;
@@ -260,6 +283,10 @@ footer a {
   color: #fff;
 }
 
+footer p {
+  font-weight: bold;
+}
+
 .couverts {
   padding-right: 6px;
 }
@@ -269,6 +296,127 @@ footer a {
   padding-right: 5px;
 }
 
+/*page - restos*/
+/*HEADER*/
+.entete-resto {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+}
+
+.fleche {
+  color: #353535;
+  position: relative;
+  top: 15px;
+  left: 100%;
+}
+
+.entete-resto h1 {
+  font-family: "shrikhand", sans-serif;
+  width: 100%;
+  margin-top: -10px;
+  padding-left: 20px;
+  font-size: 27px;
+}
+
+/*PHOTO*/
+.photo-resto {
+  width: 100%;
+  height: 235px;
+  object-fit: cover;
+}
+
+/*MENU*/
+.menu {
+  background-color: #f6f6f6;
+  border-radius: 25px 25px 0 0;
+  margin-top: -55px;
+  position: relative;
+  z-index: 0;
+}
+
+.menu h2 {
+  font-family: "shrikhand", sans-serif;
+  padding-top: 20px;
+  font-size: 24px;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.menu .coeur {
+  margin-top: 20px;
+  margin-right: -5%;
+}
+
+/*Entrées*/
+.entree h3 {
+  text-align: left;
+  padding-left: 15px;
+  color: #353535;
+  font-size: 14px;
+  margin-top: -20px;
+}
+
+.resto-titre {
+  border-bottom: 2px solid #99e2d0;
+}
+
+.zone-plat {
+  box-shadow: 2px 4px 8px #e9e9e9;
+  background-color: #fff;
+  width: 93%;
+  margin-left: 4%;
+  margin-bottom: 10px;
+  height: 55px;
+  border-radius: 13px;
+}
+
+.zone-plat h4 {
+  margin: 8px 0 0 2%;
+  padding-top: 8px;
+  text-align: left;
+}
+
+.zone-plat p {
+  margin: 3px 0 0 2%;
+  text-align: left;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tarif {
+  font-weight: bold;
+  margin-right: 6%;
+}
+
+/*Plats*/
+.plat h3 {
+  text-align: left;
+  padding-left: 15px;
+  color: #353535;
+  font-size: 14px;
+  margin-top: -20px;
+  margin-top: 35px;
+}
+
+/*Desserts*/
+.dessert h3 {
+  text-align: left;
+  padding-left: 15px;
+  color: #353535;
+  font-size: 14px;
+  margin-top: -20px;
+  margin-top: 35px;
+}
+
+.menu .bouton {
+  width: 50%;
+  margin: 30px 0 40px 0;
+}
+
+/*FOOTER*/
 /* composants:position 4*/
 /* layout:position 5*/
 

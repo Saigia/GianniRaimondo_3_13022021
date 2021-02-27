@@ -1,4 +1,6 @@
-/*page1 - Accueil*/
+/*page - Accueil*/
+
+/*HEADER*/
 .entete {
     padding: 5px 0;
     background-color: $color-bg1;
@@ -10,6 +12,7 @@
     width: 50%;
 }
 
+/*FORM*/
 input {
     @include input;
 }
@@ -32,19 +35,21 @@ h1 {
     margin-bottom: 0;
 }
 
-.header-titres {
+.form-titres {
     background-color: $color-bg1;
     padding: 1px 0 45px 0;
 }
 
-header p {
+form p {
     padding-bottom: 10px;
     margin-top: 10px;
 }
+
 .bouton {
     @include bouton;
 }
 
+/*FONCTIONNEMENT*/
 h2 {
     font-size: $titres-size;
     text-align: left;
@@ -54,7 +59,7 @@ h2 {
 .fonctionnement {
     margin-bottom: 55px;
 }
-
+/*
 .fonctionnement div {
     @include parafonc;
 }
@@ -100,8 +105,9 @@ h2 {
 .txtfonc3 {
     margin-left: -24px;
     margin-right: 24px;
-}
-.fonctionnement div:hover {
+}*/
+
+.fonctionnement li:hover {
     background-color: $color-bg3;
     box-shadow: 2px 4px 4px $color-shafonc;
     & i{
@@ -109,6 +115,7 @@ h2 {
     }
 }
 
+/*RESTAURANTS*/
 .restaurants {
     background-color: $color-bg1;
 }
@@ -166,6 +173,7 @@ h2 {
     top: -150px;
 }
 
+/*FOOTER*/
 footer {
     background-color: $color-bg2;
     text-align: left;
@@ -185,6 +193,10 @@ footer a {
     color: $color-blc;
 }
 
+footer p {
+    font-weight: bold;
+}
+
 .couverts {
     padding-right: 6px;
 }
@@ -193,3 +205,104 @@ footer a {
     font-size: 11px;
     padding-right: 5px;
 }
+
+/*page - restos*/
+
+/*HEADER*/
+.entete-resto {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+}
+
+.fleche {
+    color: $color-bg2;
+    position: relative;
+    top: 15px;
+    left: 100%;
+}
+
+.entete-resto h1 {
+    font-family: "shrikhand", sans-serif;
+    width: 100%;
+    margin-top: -10px;
+    padding-left: 20px;
+    font-size: 27px;
+}
+
+/*PHOTO*/
+.photo-resto {
+    width: 100%;
+    height: 235px;
+    object-fit: cover;
+}
+
+/*MENU*/
+.menu {
+    background-color: #f6f6f6;
+    border-radius: 25px 25px 0 0;
+    margin-top: -55px;
+    position: relative;
+    z-index: 0;
+}
+
+.menu h2 {
+    font-family: "shrikhand", sans-serif;
+    padding-top: 20px;
+    font-size: $titres-size-resto;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.menu .coeur {
+    margin-top: 20px;
+    margin-right: -5%
+}
+
+/*Entrées*/
+.entree h3 {
+    @include platitre;
+}
+
+.resto-titre {
+    border-bottom: 2px solid $color-03;
+}
+
+.zone-plat {
+    @include zoneplat;
+}
+
+.zone-plat h4 {
+    @include zoneplatitre;
+}
+
+.zone-plat p {
+    @include zoneplatxt;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tarif {
+    font-weight: bold;
+    margin-right: 6%;
+}
+
+/*Plats*/
+.plat h3 {
+    @include platitre;
+    margin-top: 35px;
+}
+
+/*Desserts*/
+.dessert h3 {
+    @include platitre;
+    margin-top: 35px;
+}
+
+.menu .bouton {
+    width: 50%;
+    margin: 30px 0 40px 0;
+}
+
+/*FOOTER*/

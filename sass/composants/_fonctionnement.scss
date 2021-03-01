@@ -1,0 +1,64 @@
+/*FONCTIONNEMENT*/
+
+.fonctionnement {
+    margin-bottom: 55px;
+    h2 {
+        font-size: $titres-size;
+        text-align: left;
+        padding: 15px 0 0 15px;
+    }
+    ol {
+        list-style: none;
+        counter-reset: li;
+        li::before {
+            content: counter(li);
+            color: $color-blc;
+            border-radius: 10px;
+            font-size: 13px;
+            background-color: $color-01;
+            display: inline-block;
+            width: 21px;
+            height: 18px;
+            padding-top: 3px;
+            margin-top: 16px;
+            margin-left: -11px;
+            margin-right: 8px;
+            text-align: center;
+        }
+        li {
+            counter-increment: li;
+            background-color: $color-bg1;
+            box-shadow: 2px 4px 8px $color-shafonc;
+            border-radius: 15px;
+            margin-top: 20px;
+            margin-left: -15px;
+            width: 98%;
+            height: 55px;
+            text-align: left;
+        }
+        i {
+            padding-left: 15px;
+            color: $color-icone;
+        }
+        span {
+            font-size: 13px;
+            font-weight: bold;
+            padding-left: 15px;
+        }
+        .phone {
+            padding-left: 25px;
+        }
+        .list {
+            padding-left: 19px;
+        }
+    }
+}
+
+.fonctionnement li:hover {
+    background-color: $color-bg3;
+    box-shadow: 2px 4px 4px $color-shafonc;
+    & i{
+        color: $color-01;
+    }
+}
+

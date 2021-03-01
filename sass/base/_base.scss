@@ -5,6 +5,11 @@ body {
     font-family: 'roboto', sans-serif;
 }
 
-a {/*accueil Restos + footer*/
+/*accueil Restos + footer*/
+a {
     @include lien;
 }
+
+.photo-resto {
+    @include restophoto;
+} 

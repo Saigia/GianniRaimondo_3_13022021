@@ -1,0 +1,32 @@
+/*HEADER - Accueil*/
+.entete {
+    padding: 5px 0;
+    background-color: $color-bg1;
+    .header-logo {
+        background-color: $color-bg1;
+        height: 30px;
+        width: 50%;
+    }
+}
+
+/*HEADER - Restos*/
+.entete-resto {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    .fleche {
+        color: $color-bg2;
+        position: relative;
+        top: 15px;
+        left: 100%;
+    }
+
+}
+
+.entete-resto h1 {
+    font-family: "shrikhand", sans-serif;
+    width: 100%;
+    margin-top: 5px;
+    font-size: 27px;
+}

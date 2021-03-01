@@ -3,6 +3,10 @@
 
 @import "./base/base"; /* base:position 3*/
 
-@import "./composants/composants"; /* composants:position 4*/
+@import "./composants/menu"; /* composants:position 4*/
+@import "./composants/formulaire"; /* composants:position 4*/
+@import "./composants/fonctionnement"; /* composants:position 4*/
+@import "./composants/accueil-resto"; /* composants:position 4*/
 
-@import "./layout/form"; /* layout:position 5*/
+@import "./layout/header"; /* layout:position 5*/
+@import "./layout/footer"; /* layout:position 5*/

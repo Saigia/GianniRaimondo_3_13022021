@@ -1,0 +1,27 @@
+/*FOOTER*/
+footer {
+    background-color: $color-bg2;
+    text-align: left;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    padding-left: 5%;
+    a {
+        color: $color-blc;
+        .footer-logo {
+            font-family: 'Shrikhand', sans-serif;
+            height: 25px;
+            width: 35%;
+            padding-top: 15px;
+        }
+        p {
+            font-weight: bold;
+            .couverts {
+                padding-right: 6px;
+            }
+            .poignee-mains {
+                font-size: 11px;
+                padding-right: 5px;
+            }
+        }
+    }
+}

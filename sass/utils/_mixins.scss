@@ -20,30 +20,6 @@
     font-weight: bold;
 }
 
-/*@mixin parafonc {
-    width: 87%;
-    height: 45px;
-    margin-left: 8%;
-    margin-bottom: 20px;
-    background-color: $color-bg1;
-    border-radius: 20px;
-    box-shadow: 2px 4px 8px $color-shafonc;
-    padding-top: 20px;
-    font-size: 14px;
-}
-
-@mixin numberfonc {
-    padding: 2px 7px;
-    border-radius: 15px;
-    background-color: $color-01;
-    color: $color-blc;
-}
-
-@mixin iconefonc {
-    color: $color-icone;
-    font-size: 17px;
-}*/
-
 @mixin image {
     width: 100%;
     height: 160px;
@@ -77,12 +53,17 @@
     font-weight: bold;
 }
 
+@mixin restophoto {
+    width: 100%;
+    height: 235px;
+    object-fit: cover;
+}
+
 @mixin platitre {
     text-align: left;
     padding-left: 15px;
     color: $color-bg2;
     font-size: $titre-plat;
-    margin-top: -20px;
 }
 
 @mixin zoneplat {

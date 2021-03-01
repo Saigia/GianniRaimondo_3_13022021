@@ -1,0 +1,51 @@
+/*RESTAURANTS*/
+.restaurants {
+    background-color: $color-bg1;
+    h2 {
+        font-size: $titres-size;
+        text-align: left;
+        padding: 40px 0 0 15px;
+        margin-bottom: -5px;
+    }
+    aside {
+        padding-bottom: 40px;
+        a {
+            @include lien-resto;
+            .imgresto {
+                @include image;
+            }
+            .nouveau {
+                @include nouveau;
+                position: relative;
+                right: -76%;
+                top: -150px;
+            }
+            .restotexte1 {
+                margin-top: -25px;
+                margin-bottom: -15px;
+            }
+            .restotexte2 {
+                margin-bottom: -15px;
+            }
+        }
+    }
+    h3 {
+        font-size: $nomresto-size;
+        margin-top: 8px;
+        margin-left: 2%;
+        margin-bottom: 0;
+        text-align: left;
+    }
+}
+
+.restotexte1 p, .restotexte2 p {
+    font-size: $lieuresto-size;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 0 2%;
+    .coeur {
+        font-size: 20px;
+        margin-right: 6%;
+        margin-top: -10px;
+    }
+}

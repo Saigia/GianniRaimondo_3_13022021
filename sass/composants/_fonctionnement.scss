@@ -1,11 +1,13 @@
 /*FONCTIONNEMENT*/
-
 .fonctionnement {
     margin-bottom: 55px;
     h2 {
         font-size: $titres-size;
         text-align: left;
         padding: 15px 0 0 15px;
+        @media (min-width: 768px) {
+            padding-left: 3%;
+        }
     }
     ol {
         list-style: none;
@@ -35,6 +37,9 @@
             width: 98%;
             height: 55px;
             text-align: left;
+            @media (min-width: 768px) {
+                margin-left: 4%;
+            }
         }
         i {
             padding-left: 15px;
@@ -47,9 +52,18 @@
         }
         .phone {
             padding-left: 25px;
+            @media (min-width: 768px) {
+                padding-left: 15px;
+            }
         }
         .list {
             padding-left: 19px;
+        }
+        @media (min-width: 768px) {
+            display: flex;
+            flex-direction: row;
+            width: 97%;
+            padding-left: 0;
         }
     }
 }

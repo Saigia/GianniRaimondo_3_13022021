@@ -6,6 +6,9 @@
         text-align: left;
         padding: 40px 0 0 15px;
         margin-bottom: -5px;
+        @media (min-width: 768px) {
+            padding-left: 3%;
+        }
     }
     aside {
         padding-bottom: 40px;
@@ -27,6 +30,11 @@
             .restotexte2 {
                 margin-bottom: -15px;
             }
+        }
+        @media (min-width: 450px) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
         }
     }
     h3 {

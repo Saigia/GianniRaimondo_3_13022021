@@ -1,5 +1,8 @@
 /*FORM*/
-.input {
+.champ {
+    @media (min-width: 600px) {
+        background-color: $color-bg1;
+    }
     .mapmaker {
         position: absolute;
         top: 56px;
@@ -9,17 +12,36 @@
         @media (max-width: 319px) {
             display: none;
         }
-        @media (min-width: 500px) {
-            position: absolute;
-            left: 5%;
+        @media (min-width: 460px) {
+            left: 35%;
         }
-        @media  (min-width: 1023px) {
-            left: 3%;
+        @media (min-width: 520px) {
+            position: absolute;
+            top: 67px;
+            left: 37%;
+        }
+        @media (min-width: 620px) {
+            left: 37%;
+        }
+        @media (min-width: 700px) {
+            left: 39%;
+        }
+        @media (min-width: 800px) {
+            left: 41%;
+        }
+        @media (min-width: 950px) {
+            left: 43%;
+        }
+        @media (min-width: 1200px) {
+            left: 44%;
+        }
+        @media (min-width: 1450px) {
+            left: 45%;
         }
     }
 }
 
-input {/*fonctionne que sur chrome ????*/
+.input {/*fonctionne que sur chrome ????*/
     @include input;
     &::placeholder {
         color: $color-bg2;

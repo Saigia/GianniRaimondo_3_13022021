@@ -37,6 +37,16 @@ a {
   height: 235px;
   object-fit: cover;
 }
+@media (min-width: 768px) {
+  .photo-resto {
+    height: 400px;
+  }
+}
+@media (min-width: 992px) {
+  .photo-resto {
+    height: 500px;
+  }
+}
 
 /* base:position 3*/
 /*MENU*/
@@ -50,27 +60,46 @@ a {
 .menu h2 {
   font-family: "shrikhand", sans-serif;
   font-size: 23px;
-  padding: 20px 0 0 15px;
-  margin-bottom: 40px;
+  padding-top: 20px;
+  margin-left: 4%;
+  margin-bottom: 35px;
   display: flex;
   justify-content: space-between;
 }
+@media (min-width: 768px) {
+  .menu h2 {
+    font-size: 30px;
+  }
+}
 .menu .coeur {
   margin-top: 7px;
-  margin-right: 10%;
+  margin-right: 9%;
+}
+@media (min-width: 768px) {
+  .menu .coeur {
+    font-size: 23px;
+    margin-right: 7%;
+  }
+}
+.menu h3 {
+  text-align: left;
+  margin-left: 4%;
+  color: #353535;
+  font-size: 14px;
+  margin-top: 35px;
 }
 
 /*Entrées*/
-.entree h3 {
-  text-align: left;
-  padding-left: 15px;
-  color: #353535;
-  font-size: 14px;
-  margin-top: -20px;
-}
-
 .resto-titre {
   border-bottom: 2px solid #99e2d0;
+}
+
+@media (min-width: 768px) {
+  .entree, .plat, .dessert {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .zone-plat {
@@ -82,10 +111,20 @@ a {
   height: 55px;
   border-radius: 13px;
 }
+@media (min-width: 768px) {
+  .zone-plat {
+    width: 44%;
+  }
+}
 .zone-plat h4 {
   margin: 8px 0 0 2%;
   padding-top: 8px;
   text-align: left;
+}
+@media (min-width: 768px) {
+  .zone-plat h4 {
+    padding-top: 0;
+  }
 }
 .zone-plat p {
   margin: 3px 0 0 2%;
@@ -99,15 +138,6 @@ a {
   margin-right: 6%;
 }
 
-/*Plats - Desserts*/
-.plat h3, .dessert h3 {
-  text-align: left;
-  padding-left: 15px;
-  color: #353535;
-  font-size: 14px;
-  margin-top: 35px;
-}
-
 .menu .bouton {
   background-color: #ff79da;
   color: #fff;
@@ -117,6 +147,7 @@ a {
   border-radius: 25px;
   padding: 0 20px;
   font-weight: bold;
+  max-width: 205px;
   width: 50%;
   margin: 30px 0 40px 0;
 }
@@ -124,7 +155,12 @@ a {
 /*FOOTER*/
 /* composants:position 4*/
 /*FORM*/
-.input .mapmaker {
+@media (min-width: 600px) {
+  .champ {
+    background-color: #f6f6f6;
+  }
+}
+.champ .mapmaker {
   position: absolute;
   top: 56px;
   left: 30%;
@@ -132,23 +168,54 @@ a {
   color: #353535;
 }
 @media (max-width: 319px) {
-  .input .mapmaker {
+  .champ .mapmaker {
     display: none;
   }
 }
-@media (min-width: 500px) {
-  .input .mapmaker {
-    position: absolute;
-    left: 5%;
+@media (min-width: 460px) {
+  .champ .mapmaker {
+    left: 35%;
   }
 }
-@media (min-width: 1023px) {
-  .input .mapmaker {
-    left: 3%;
+@media (min-width: 520px) {
+  .champ .mapmaker {
+    position: absolute;
+    top: 67px;
+    left: 37%;
+  }
+}
+@media (min-width: 620px) {
+  .champ .mapmaker {
+    left: 37%;
+  }
+}
+@media (min-width: 700px) {
+  .champ .mapmaker {
+    left: 39%;
+  }
+}
+@media (min-width: 800px) {
+  .champ .mapmaker {
+    left: 41%;
+  }
+}
+@media (min-width: 950px) {
+  .champ .mapmaker {
+    left: 43%;
+  }
+}
+@media (min-width: 1200px) {
+  .champ .mapmaker {
+    left: 44%;
+  }
+}
+@media (min-width: 1450px) {
+  .champ .mapmaker {
+    left: 45%;
   }
 }
 
-input {
+.input {
   /*fonctionne que sur chrome ????*/
   background-color: #eaeaea;
   border: none;
@@ -159,7 +226,15 @@ input {
   height: 40px;
   box-shadow: 0 2px 4px #d5d5d5 inset;
 }
-input::placeholder {
+@media (min-width: 600px) {
+  .input {
+    min-width: 600px;
+    width: 45%;
+    border-radius: 325px/25px;
+    box-shadow: 0 15px 10px #d5d5d5 inset;
+  }
+}
+.input::placeholder {
   color: #353535;
 }
 
@@ -185,6 +260,7 @@ input::placeholder {
   border-radius: 25px;
   padding: 0 20px;
   font-weight: bold;
+  max-width: 205px;
 }
 
 /* composants:position 4*/
@@ -395,30 +471,42 @@ input::placeholder {
 .entete .header-logo {
   background-color: #f6f6f6;
   height: 30px;
+  max-height: 40px;
   width: 50%;
   min-width: 150px;
   max-width: 260px;
+}
+@media (min-width: 520px) {
+  .entete .header-logo {
+    height: 40px;
+  }
 }
 
 /*HEADER - Restos*/
 .entete-resto {
   background-color: #fff;
-  display: flex;
-  flex-direction: row;
   height: 50px;
 }
 .entete-resto .fleche {
   color: #353535;
-  position: relative;
+  position: absolute;
   top: 15px;
-  left: 100%;
+  left: 25px;
 }
 
-.entete-resto h1 {
-  font-family: "shrikhand", sans-serif;
-  width: 100%;
+.entete-resto .header-logo {
+  min-height: 30px;
+  max-height: 40px;
+  width: 50%;
+  min-width: 150px;
+  max-width: 260px;
   margin-top: 5px;
-  font-size: 27px;
+}
+@media (min-width: 520px) {
+  .entete-resto .header-logo {
+    max-height: 40px;
+    width: 260px;
+  }
 }
 
 /* layout:position 5*/
@@ -428,7 +516,7 @@ footer {
   text-align: left;
   padding-top: 1px;
   padding-bottom: 10px;
-  padding-left: 5%;
+  padding-left: 4%;
 }
 footer a {
   color: #fff;
@@ -438,7 +526,7 @@ footer a .footer-logo {
   height: 25px;
   width: 35%;
   min-width: 100px;
-  max-width: 200px;
+  max-width: 140px;
   padding-top: 15px;
 }
 footer a p {

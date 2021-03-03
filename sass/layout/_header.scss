@@ -5,30 +5,39 @@
     .header-logo {
         background-color: $color-bg1;
         height: 30px;
+        max-height: 40px;
         width: 50%;
         min-width: 150px;
         max-width: 260px;
+        @media (min-width: 520px) {
+            height: 40px;
+        }
     }
 }
 
 /*HEADER - Restos*/
 .entete-resto {
     background-color: #fff;
-    display: flex;
-    flex-direction: row;
     height: 50px;
     .fleche {
         color: $color-bg2;
-        position: relative;
+        position: absolute;
         top: 15px;
-        left: 100%;
+        left: 25px;
     }
 
 }
 
-.entete-resto h1 {
-    font-family: "shrikhand", sans-serif;
-    width: 100%;
+.entete-resto .header-logo {
+    min-height: 30px;
+    max-height: 40px;
+    width: 50%;
+    min-width: 150px;
+    max-width: 260px;
     margin-top: 5px;
-    font-size: 27px;
+    @media (min-width: 520px) {
+        max-height: 40px;
+        width: 260px;
+    }
+
 }

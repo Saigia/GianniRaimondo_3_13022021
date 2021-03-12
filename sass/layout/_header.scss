@@ -17,7 +17,7 @@
 
 /*HEADER - Restos*/
 .entete-resto {
-    background-color: #fff;
+    background-color: $color-blc;
     height: 50px;
     .fleche {
         color: $color-bg2;
@@ -39,5 +39,4 @@
         max-height: 40px;
         width: 260px;
     }
-
 }

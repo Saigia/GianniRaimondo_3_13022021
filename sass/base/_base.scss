@@ -7,10 +7,10 @@ body {
 
 /*accueil Restos + footer*/
 a {
-    @include lien;
+    text-decoration: none;
 }
 
-/*maquettes menu*/
+/*maquettes MENU*/
 .photo-resto {
-    @include restophoto;
+    @include photoresto;
 } 

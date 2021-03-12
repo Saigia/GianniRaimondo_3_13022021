@@ -1,3 +1,4 @@
+/*PAGE ACCUEIL_formulaire*/
 @mixin input {
     background-color: $color-input;
     border: none;
@@ -9,12 +10,13 @@
     box-shadow: 0 2px 4px $color-shalogo inset;
     @media (min-width: 600px) {
         min-width: 600px;
+        max-width: 650px;
         width: 45%;
         border-radius: 325px / 25px;
         box-shadow: 0 15px 10px $color-shalogo inset;
     }
 }
-
+/*PAGE ACCUEIL + MENU*/
 @mixin bouton {
     background-color: $color-02;
     color: $color-blc;
@@ -26,18 +28,14 @@
     font-weight: bold;
     max-width: 205px;
 }
-
+/*PAGE ACCUEIL_resto*/
 @mixin image {
     width: 100%;
     height: 160px;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
 }
-
-@mixin lien {
-    text-decoration: none;
-}
-
+/*PAGE ACCUEIL_resto*/
 @mixin lien-resto {
     background-color: $color-blc;
     color: black;
@@ -52,7 +50,7 @@
         width: 44%;
     }
 }
-
+/*PAGE ACCUEIL_resto*/
 @mixin nouveau {
     width: 20%;
     height: 20px;
@@ -79,8 +77,8 @@
         right: -82%;
     }
 }
-
-@mixin restophoto {
+/*PAGE MENU_Base*/
+@mixin photoresto {
     width: 100%;
     height: 235px;
     object-fit: cover;
@@ -91,14 +89,14 @@
         height: 500px;
     }
 }
-
+/*PAGE MENU_H_Entrées-Plats-Desserts*/
 @mixin platitre {
     text-align: left;
     margin-left: 4%;
     color: $color-bg2;
     font-size: $titre-plat;
 }
-
+/*PAGE MENU_zones "plats"*/
 @mixin zoneplat {
     box-shadow: 2px 4px 8px $color-shafonc;
     background-color: $color-blc;
@@ -111,7 +109,7 @@
         width: 44%;
     }
 }
-
+/*PAGE MENU_H_plats*/
 @mixin zoneplatitre {
     margin: 8px 0 0 2%;
     padding-top: 8px;
@@ -121,7 +119,7 @@
     }
 
 }
-
+/*PAGE MENU_P_ plats*/
 @mixin zoneplatxt {
     margin: 3px 0 0 2%;
     text-align: left;

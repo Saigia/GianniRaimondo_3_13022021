@@ -1,6 +1,6 @@
-/*MENU*/
+/*PAGE MENU - MENU*/
 .menu {
-    background-color: #f6f6f6;
+    background-color: $color-bg1;
     border-radius: 25px 25px 0 0;
     margin-top: -70px;
     position: relative;
@@ -31,7 +31,7 @@
     }
 }
 
-/*Entrées*/
+/*Entrées - Plats - Desserts*/
 .resto-titre {
     border-bottom: 2px solid $color-03;
 }
@@ -58,7 +58,7 @@
         margin-right: 6%;
     }
 }
-
+/*PAGE ACCUEIL_formulaire + PAGE MENU*/
 .menu .bouton {
     @include bouton;
     width: 50%;

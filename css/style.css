@@ -1,23 +1,36 @@
 @charset "UTF-8";
-/*page - accueil*/
+/*PAGE ACCUEIL*/
+/*COULEURS*/
 /*shadow bouton Header + bg n° Fonctionnement (+survol icone)*/
 /*bg bouton Header*/
 /*bg bouton resto "nouveau" + lignes resto + anim resto*/
 /*txt bouton resto "nouveau"*/
 /*ombre logo*/
+/*bg champ input*/
 /*bg Header, boutons Fonctionnement, bg Resto*/
 /*icone + police input, bg Footer, fleche-lien resto retour accueil*/
 /*bg survol boutons Fonctionnement*/
 /*icones Fonctionnement*/
 /*ombre boutons Fonctionnement*/
+/*TAILLES*/
 /*h2 fonctionnement + resto*/
 /*h3 resto*/
 /*p resto*/
-/*page - resto*/
+/*PAGE MENU RESTO*/
 /*nom resto*/
 /*titres repas*/
 /*accompagnement*/
 /* utils:position 1*/
+/*PAGE ACCUEIL_formulaire*/
+/*PAGE ACCUEIL + MENU*/
+/*PAGE ACCUEIL_resto*/
+/*PAGE ACCUEIL_resto*/
+/*PAGE ACCUEIL_resto*/
+/*PAGE MENU_Base*/
+/*PAGE MENU_H_Entrées-Plats-Desserts*/
+/*PAGE MENU_zones "plats"*/
+/*PAGE MENU_H_plats*/
+/*PAGE MENU_P_ plats*/
 /* utils:position 1*/
 body {
   margin: 0;
@@ -31,7 +44,7 @@ a {
   text-decoration: none;
 }
 
-/*maquettes menu*/
+/*maquettes MENU*/
 .photo-resto {
   width: 100%;
   height: 235px;
@@ -49,7 +62,7 @@ a {
 }
 
 /* base:position 3*/
-/*MENU*/
+/*PAGE MENU - MENU*/
 .menu {
   background-color: #f6f6f6;
   border-radius: 25px 25px 0 0;
@@ -89,7 +102,7 @@ a {
   margin-top: 35px;
 }
 
-/*Entrées*/
+/*Entrées - Plats - Desserts*/
 .resto-titre {
   border-bottom: 2px solid #99e2d0;
 }
@@ -138,6 +151,7 @@ a {
   margin-right: 6%;
 }
 
+/*PAGE ACCUEIL_formulaire + PAGE MENU*/
 .menu .bouton {
   background-color: #ff79da;
   color: #fff;
@@ -214,6 +228,11 @@ a {
     left: 45%;
   }
 }
+@media (min-width: 1700px) {
+  .champ .mapmaker {
+    left: 46%;
+  }
+}
 
 .input {
   /*fonctionne que sur chrome ????*/
@@ -229,6 +248,7 @@ a {
 @media (min-width: 600px) {
   .input {
     min-width: 600px;
+    max-width: 650px;
     width: 45%;
     border-radius: 325px/25px;
     box-shadow: 0 15px 10px #d5d5d5 inset;
@@ -351,7 +371,7 @@ a {
 }
 
 /* composants:position 4*/
-/*RESTAURANTS*/
+/*PAGE ACCUEIL - Restaurants*/
 .restaurants {
   background-color: #f6f6f6;
 }

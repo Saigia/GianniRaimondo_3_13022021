@@ -23,11 +23,9 @@
                 right: -76%;
                 top: -150px;
             }
-            .restotexte1 {
+            .restotexte {
+                padding-left: 5px;
                 margin-top: -25px;
-                margin-bottom: -15px;
-            }
-            .restotexte2 {
                 margin-bottom: -15px;
             }
         }
@@ -43,17 +41,40 @@
         margin-left: 2%;
         margin-bottom: 0;
         text-align: left;
+        white-space: nowrap;
     }
 }
-
-.restotexte1 p, .restotexte2 p {
+/*PAGE ACCUEIL - Zone texte sous image*/
+.testcoeur {
+    @include boitecoeur;
+}
+.testcoeur2 {
+    @include boitecoeur;
+    padding-top: 25px;
+}
+/*PAGE ACCUEIL - Texte hors titre*/
+.restotexte p {
     font-size: $lieuresto-size;
     display: flex;
-    justify-content: space-between;
     margin: 0 0 0 2%;
+}
+/*PAGE ACCUEIL - Partie coeurs*/
+.animcoeur {
+    font-size: 20px;
     .coeur {
-        font-size: 20px;
-        margin-right: 6%;
-        margin-top: -10px;
+        @include animcoeur;
+        bottom: 10px;
+    }
+    .coeurplein {
+        @include animcoeur;
+        bottom: 34px;
+        opacity: 0;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-color: $color-01;
+        //text-shadow: 1px 1px 1px $color-02 inset;
+        &:hover {
+            opacity: 1;
+        }
     }
 }

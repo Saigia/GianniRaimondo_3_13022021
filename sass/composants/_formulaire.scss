@@ -1,4 +1,5 @@
-/*FORM*/
+/*PAGE ACCUEIL - FORM*/
+/*Champ de recherche*/
 .champ {
     @media (min-width: 600px) {
         background-color: $color-bg1;
@@ -43,14 +44,14 @@
         }
     }
 }
-
 .input {/*fonctionne que sur chrome ????*/
     @include input;
     &::placeholder {
         color: $color-bg2;
     }
 }
-
+/*PAGE ACCUEIL - FORM*/
+/*Titre texte bouton*/
 .form-titres {
     background-color: $color-bg1;
     padding: 1px 0 45px 0;
@@ -64,6 +65,7 @@
         margin-top: 10px;
     }
     .bouton {
+        font-size: 13px;
         @include bouton;
     }
 }

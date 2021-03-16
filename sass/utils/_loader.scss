@@ -1,0 +1,69 @@
+.animloader {
+    background-color: $color-bg1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    animation: apparloader 0s 2500ms forwards;
+}
+@keyframes apparloader {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+        z-index: -1;
+    }
+}
+
+
+.loader {
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border: 20px solid $color-bg1;
+    width: 120px;
+    height: 120px;
+    border-top-color: $color-01;
+    border-right-color: $color-03;
+    border-bottom-color: $color-02;
+    border-left-color: $color-04;
+    border-radius: 50%;
+    animation: chargeur 3s linear infinite;
+}
+
+@keyframes chargeur {
+    0% {
+        transform: rotate(0deg) scale(.85);
+    }
+    25% {
+        border-top-color: $color-04;
+        border-right-color: $color-01;
+        border-bottom-color: $color-03;
+        border-left-color: $color-02;    
+    }
+    50% {
+        transform: rotate(360deg) scale(1.15);
+        border-top-color: $color-02;
+        border-right-color: $color-04;
+        border-bottom-color: $color-01;
+        border-left-color: $color-03;
+    }
+    75% {
+        border-top-color: $color-03;
+        border-right-color: $color-02;
+        border-bottom-color: $color-04;
+        border-left-color: $color-01;
+    }
+    100% {
+        transform: rotate(720deg) scale(.85);
+        border-top-color: $color-01;
+        border-right-color: $color-03;
+        border-bottom-color: $color-02;
+        border-left-color: $color-04;    
+    }
+}

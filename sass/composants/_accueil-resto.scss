@@ -61,6 +61,16 @@
 /*PAGE ACCUEIL - Partie coeurs*/
 .animcoeur {
     font-size: 20px;
+    &:hover {
+        .coeur {
+            opacity: 0;
+            transition: opacity 400ms 500ms;
+        }
+        .coeurplein {
+            opacity: 1;
+            transition: opacity 400ms 500ms;
+        }
+    }
     .coeur {
         @include animcoeur;
         bottom: 10px;
@@ -70,11 +80,9 @@
         bottom: 34px;
         opacity: 0;
         background-clip: text;
+        -ms-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
         -webkit-text-fill-color: transparent;
-        background-color: $color-01;
-        //text-shadow: 1px 1px 1px $color-02 inset;
-        &:hover {
-            opacity: 1;
-        }
+        background-image: linear-gradient(225deg, $color-01, $color-02);
     }
 }

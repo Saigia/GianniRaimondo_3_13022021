@@ -5,23 +5,6 @@ body {
     font-family: 'roboto', sans-serif;
 }
 
-/*accueil Restos + footer*/
 a {
     text-decoration: none;
-}
-
-/*maquettes MENU*/
-.photo-resto {
-    @include photoresto;
-}
-
-@keyframes arriveeplat{
-    from {
-        transform: scaleY(0);
-        opacity: 0;
-    }
-    to {
-        transform: scaleY(1);
-        opacity: 1;
-    }
 }

@@ -79,9 +79,7 @@
         @include animcoeur;
         bottom: 34px;
         opacity: 0;
-        background-clip: text;
-        -ms-text-fill-color: transparent;
-        -moz-text-fill-color: transparent;
+        -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-image: linear-gradient(225deg, $color-01, $color-02);
     }

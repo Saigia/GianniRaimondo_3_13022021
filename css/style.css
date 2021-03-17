@@ -42,7 +42,8 @@
   justify-content: center;
   align-items: center;
   position: fixed;
-  width: 100%;
+  pointer-events: none;
+  width: 99%;
   height: 100%;
   z-index: 1;
   animation: apparloader 300ms 2500ms forwards;
@@ -261,11 +262,7 @@ h3 {
   box-shadow: 2px 4px 8px #e9e9e9;
   background-color: #fff;
   height: 55px;
-}
-@media (min-width: 768px) {
-  .zone-plat {
-    width: 44%;
-  }
+  width: 44%;
 }
 .zone-plat:hover {
   border-radius: 13px 0 0 13px;
@@ -348,10 +345,6 @@ h3 {
 .choix:hover > .box .check {
   transform: rotate(0);
 }
-.choix:hover > .box .coche {
-  width: 30%;
-}
-
 /*PAGE MENU - Bouton*/
 .menu .bouton {
   font-size: 14px;
@@ -447,7 +440,7 @@ h3 {
   background-color: #eaeaea;
   border: none;
   color: #353535;
-  width: 99.6%;
+  width: 98.5%;
   text-align: center;
   font-weight: bold;
   height: 40px;

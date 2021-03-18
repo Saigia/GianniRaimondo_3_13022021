@@ -29,7 +29,7 @@
 /*PAGE ACCUEIL_resto*/
 /*PAGE ACCUEIL_resto*/
 /*PAGE ACCUEIL_resto*/
-/*PAGE MENU_Base*/
+/*PAGE MENU*/
 /*PAGE MENU_H_Entrées-Plats-Desserts*/
 /*PAGE MENU_zones "plats"*/
 /*PAGE MENU_H_plats*/
@@ -322,6 +322,7 @@ h3 {
   transform: rotate(1turn);
 }
 .box .check .coche {
+  font-size: 23px;
   color: #fff;
   display: block;
 }
@@ -345,6 +346,7 @@ h3 {
 .choix:hover > .box .check {
   transform: rotate(0);
 }
+
 /*PAGE MENU - Bouton*/
 .menu .bouton {
   font-size: 14px;

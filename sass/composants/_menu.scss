@@ -151,6 +151,7 @@ h3 {
         transition: transform 1s;
         transform: rotate(1turn);
         .coche {
+            font-size: 23px;
             color: $color-blc;
             display: block;
         }
@@ -172,9 +173,6 @@ h3 {
         width: 20%;
         .check {
             transform: rotate(0);
-        }
-        .coche {
-            //width: 30%;
         }
     }
 }

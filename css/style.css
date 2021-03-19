@@ -478,6 +478,7 @@ h3 {
   margin-top: 10px;
 }
 .form-titres .bouton {
+  display: inline-block;
   font-size: 13px;
   background: linear-gradient(360deg, #9356dc, #ff79da);
   color: #fff;
@@ -490,6 +491,8 @@ h3 {
   max-width: 215px;
   transform: scale(1);
   transition: transform 400ms;
+  padding-top: 17px;
+  max-height: 34px;
 }
 .form-titres .bouton:hover {
   transform: scale(1.15);

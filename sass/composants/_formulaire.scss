@@ -65,7 +65,10 @@
         margin-top: 10px;
     }
     .bouton {
-        font-size: 13px;
+        display: inline-block;
+        font-size: $accompagnement;
         @include bouton;
+        padding-top: 17px;
+        max-height: 34px;
     }
 }

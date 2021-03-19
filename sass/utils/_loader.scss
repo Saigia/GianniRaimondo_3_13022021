@@ -32,7 +32,7 @@
     border-top-color: $color-01;
     border-right-color: $color-03;
     border-bottom-color: $color-02;
-    border-left-color: $color-04;
+    border-left-color: $color-shalogo;
     border-radius: 50%;
     animation: chargeur 3s linear infinite;
 }
@@ -41,7 +41,7 @@
         transform: rotate(0deg) scale(.85);
     }
     25% {
-        border-top-color: $color-04;
+        border-top-color: $color-shalogo;
         border-right-color: $color-01;
         border-bottom-color: $color-03;
         border-left-color: $color-02;    
@@ -49,14 +49,14 @@
     50% {
         transform: rotate(360deg) scale(1.15);
         border-top-color: $color-02;
-        border-right-color: $color-04;
+        border-right-color: $color-shalogo;
         border-bottom-color: $color-01;
         border-left-color: $color-03;
     }
     75% {
         border-top-color: $color-03;
         border-right-color: $color-02;
-        border-bottom-color: $color-04;
+        border-bottom-color: $color-shalogo;
         border-left-color: $color-01;
     }
     100% {
@@ -64,6 +64,6 @@
         border-top-color: $color-01;
         border-right-color: $color-03;
         border-bottom-color: $color-02;
-        border-left-color: $color-04;    
+        border-left-color: $color-shalogo;    
     }
 }

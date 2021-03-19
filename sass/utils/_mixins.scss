@@ -18,9 +18,8 @@
 }
 /*PAGE ACCUEIL + MENU*/
 @mixin bouton {
-    background-color: $color-02;
+    background: linear-gradient(360deg, $color-01, $color-02);
     color: $color-blc;
-    background-image: linear-gradient(360deg, $color-01, $color-02);
     box-shadow: 3px 3px 3px $color-shalogo;
     border: none;
     height: 50px;
@@ -32,6 +31,8 @@
     transition: transform 400ms;
     &:hover {
         transform: scale(1.15);
+        background: linear-gradient(360deg, lighten($color: $color-01, $amount: 2), lighten($color: $color-02, $amount: 2));
+        box-shadow: 3px 3px 2px darken($color: $color-shalogo, $amount: 4) ;
     }
 }
 /*PAGE ACCUEIL_resto*/

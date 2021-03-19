@@ -70,7 +70,7 @@
   border-top-color: #9356dc;
   border-right-color: #99e2d0;
   border-bottom-color: #ff79da;
-  border-left-color: #008766;
+  border-left-color: #d5d5d5;
   border-radius: 50%;
   animation: chargeur 3s linear infinite;
 }
@@ -80,7 +80,7 @@
     transform: rotate(0deg) scale(0.85);
   }
   25% {
-    border-top-color: #008766;
+    border-top-color: #d5d5d5;
     border-right-color: #9356dc;
     border-bottom-color: #99e2d0;
     border-left-color: #ff79da;
@@ -88,14 +88,14 @@
   50% {
     transform: rotate(360deg) scale(1.15);
     border-top-color: #ff79da;
-    border-right-color: #008766;
+    border-right-color: #d5d5d5;
     border-bottom-color: #9356dc;
     border-left-color: #99e2d0;
   }
   75% {
     border-top-color: #99e2d0;
     border-right-color: #ff79da;
-    border-bottom-color: #008766;
+    border-bottom-color: #d5d5d5;
     border-left-color: #9356dc;
   }
   100% {
@@ -103,7 +103,7 @@
     border-top-color: #9356dc;
     border-right-color: #99e2d0;
     border-bottom-color: #ff79da;
-    border-left-color: #008766;
+    border-left-color: #d5d5d5;
   }
 }
 body {
@@ -350,9 +350,8 @@ h3 {
 /*PAGE MENU - Bouton*/
 .menu .bouton {
   font-size: 14px;
-  background-color: #ff79da;
+  background: linear-gradient(360deg, #9356dc, #ff79da);
   color: #fff;
-  background-image: linear-gradient(360deg, #9356dc, #ff79da);
   box-shadow: 3px 3px 3px #d5d5d5;
   border: none;
   height: 50px;
@@ -367,6 +366,8 @@ h3 {
 }
 .menu .bouton:hover {
   transform: scale(1.15);
+  background: linear-gradient(360deg, #985ede, #ff83dd);
+  box-shadow: 3px 3px 2px #cbcbcb;
 }
 
 /* composants:position 4*/
@@ -478,9 +479,8 @@ h3 {
 }
 .form-titres .bouton {
   font-size: 13px;
-  background-color: #ff79da;
+  background: linear-gradient(360deg, #9356dc, #ff79da);
   color: #fff;
-  background-image: linear-gradient(360deg, #9356dc, #ff79da);
   box-shadow: 3px 3px 3px #d5d5d5;
   border: none;
   height: 50px;
@@ -493,6 +493,8 @@ h3 {
 }
 .form-titres .bouton:hover {
   transform: scale(1.15);
+  background: linear-gradient(360deg, #985ede, #ff83dd);
+  box-shadow: 3px 3px 2px #cbcbcb;
 }
 
 /* composants:position 4*/

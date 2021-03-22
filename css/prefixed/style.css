@@ -14,8 +14,8 @@ body {
 .bouton {
   background-color: #ff79da;
   color: #fff;
-  -webkit-box-shadow: -10px -27px 35px #9356dc inset;
-          box-shadow: -10px -27px 35px #9356dc inset;
+  box-shadow: -10px -27px 35px #9356dc inset;
+  box-shadow: -10px -27px 35px #9356dc inset;
   border: none;
   height: 50px;
   border-radius: 25px;

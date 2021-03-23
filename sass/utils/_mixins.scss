@@ -125,7 +125,7 @@
 }
 /*PAGE MENU_zones "plats"*/
 @mixin zoneplat {
-    flex-grow: 1;/*ajout pour anim*/
+    flex-grow: 1;
     box-shadow: 2px 4px 8px $color-shafonc;
     background-color: $color-blc;
     height: 55px;

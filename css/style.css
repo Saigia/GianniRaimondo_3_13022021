@@ -36,6 +36,7 @@
 /*PAGE MENU_P_ plats*/
 /* utils:position 1*/
 /*FOND*/
+/*apparition*/
 .animloader {
   background-color: #f6f6f6;
   display: flex;
@@ -60,6 +61,7 @@
   }
 }
 /*OBJET*/
+/*cercle 4 couleurs rotatif*/
 .loader {
   margin: auto;
   margin-top: 100px;
@@ -258,7 +260,6 @@ h3 {
 /*PAGE MENU - Zone Plats*/
 .zone-plat {
   flex-grow: 1;
-  /*ajout pour anim*/
   box-shadow: 2px 4px 8px #e9e9e9;
   background-color: #fff;
   height: 55px;

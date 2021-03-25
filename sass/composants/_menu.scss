@@ -9,6 +9,9 @@
     margin-top: -70px;
     position: relative;
     z-index: 0;
+    h2 {
+        @include platitre;
+    }    
 }
 /*PAGE MENU - Zone Titre*/
 .menubloctitre {
@@ -62,9 +65,9 @@
     }
 }
 /*PAGE MENU - Entrées Plats Desserts*/
-h2 {
+/*h2 {
     @include platitre;
-}
+}*/
 .resto-titre {
     border-bottom: 2px solid $color-03;
 }

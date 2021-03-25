@@ -145,6 +145,14 @@ a {
   position: relative;
   z-index: 0;
 }
+.menu h2 {
+  text-align: left;
+  margin-top: 35px;
+  margin-left: 4%;
+  margin-bottom: 13px;
+  color: #353535;
+  font-size: 14px;
+}
 
 /*PAGE MENU - Zone Titre*/
 .menubloctitre {
@@ -202,15 +210,9 @@ a {
 }
 
 /*PAGE MENU - Entrées Plats Desserts*/
-h2 {
-  text-align: left;
-  margin-top: 35px;
-  margin-left: 4%;
-  margin-bottom: 13px;
-  color: #353535;
-  font-size: 14px;
-}
-
+/*h2 {
+    @include platitre;
+}*/
 .resto-titre {
   border-bottom: 2px solid #99e2d0;
 }
@@ -509,7 +511,7 @@ h2 {
 .fonctionnement h2 {
   font-size: 20px;
   text-align: left;
-  padding-top: 15px;
+  padding: 15px 0 0 3%;
   /*@media (min-width: 768px) {
       padding-left: 3%;
   }*/
@@ -594,7 +596,7 @@ h2 {
 .restaurants h2 {
   font-size: 20px;
   text-align: left;
-  padding-top: 40px;
+  padding: 40px 0 0 3%;
   margin-bottom: -5px;
 }
 .restaurants aside {

@@ -148,7 +148,7 @@ a {
 .menu h2 {
   text-align: left;
   margin-top: 35px;
-  margin-left: 3%;
+  margin-left: 4%;
   margin-bottom: 13px;
   color: #353535;
   font-size: 14px;
@@ -508,10 +508,12 @@ a {
 .fonctionnement h2 {
   font-size: 20px;
   text-align: left;
-  padding: 15px 0 0 3%;
-  /*@media (min-width: 768px) {
-      padding-left: 3%;
-  }*/
+  padding: 15px 0 0 4%;
+}
+@media (min-width: 768px) {
+  .fonctionnement h2 {
+    padding-left: 3%;
+  }
 }
 .fonctionnement ol {
   list-style: none;
@@ -593,8 +595,13 @@ a {
 .restaurants h2 {
   font-size: 20px;
   text-align: left;
-  padding: 40px 0 0 3%;
   margin-bottom: -5px;
+  padding: 40px 0 0 4%;
+}
+@media (min-width: 768px) {
+  .restaurants h2 {
+    padding-left: 3%;
+  }
 }
 .restaurants aside {
   padding-bottom: 40px;

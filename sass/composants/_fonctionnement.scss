@@ -4,10 +4,10 @@
     h2 {
         font-size: $titres-size;
         text-align: left;
-        padding: 15px 0 0 15px;
-        @media (min-width: 768px) {
+        padding-top: 15px;
+        /*@media (min-width: 768px) {
             padding-left: 3%;
-        }
+        }*/
     }
     ol {
         list-style: none;

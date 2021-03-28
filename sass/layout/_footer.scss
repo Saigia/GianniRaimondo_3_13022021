@@ -1,32 +1,30 @@
 /*FOOTER*/
-footer {
+address {
     background-color: $color-bg2;
     text-align: left;
     padding-top: 1px;
     padding-bottom: 10px;
     padding-left: 4%;
-    address {
-        font-style: normal;
-    }
+    font-style: normal;
     a {
         color: $color-blc;
-        .footer-logo {
-            font-family: 'Shrikhand', sans-serif;
-            height: 25px;
-            width: 35%;
-            min-width: 100px;
-            max-width: 140px;
-            padding-top: 15px;
+    }
+    .footer-logo {
+        font-family: 'Shrikhand', sans-serif;
+        height: 25px;
+        width: 35%;
+        min-width: 100px;
+        max-width: 140px;
+        padding-top: 15px;
+    }
+    p {
+        font-weight: bold;
+        .couverts {
+            padding-right: 6px;
         }
-        p {
-            font-weight: bold;
-            .couverts {
-                padding-right: 6px;
-            }
-            .poignee-mains {
-                font-size: 11px;
-                padding-right: 5px;
-            }
+        .poignee-mains {
+            font-size: 11px;
+            padding-right: 5px;
         }
     }
 }
